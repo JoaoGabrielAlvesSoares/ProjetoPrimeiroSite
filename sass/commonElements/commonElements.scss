@@ -1,0 +1,119 @@
+.header {
+  font-size: 12px;
+  font-weight: bold;
+
+  #navItem {
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.logoPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 40px;
+}
+
+#button {
+  padding: $padding-button;
+  border: 2px solid white;
+}
+
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+
+  button {
+    border: 2px solid $link-hover;
+    margin-right: 10px;
+  }
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  .copyOBC {
+    color: $copy-color;
+  }
+}
+
+// Media Query
+@media (max-width: 449px) {
+  .dowloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+
+  .falcon9Desc {
+    font-size: 18px;
+    line-height: auto;
+  }
+
+  .subTitleFalcon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
